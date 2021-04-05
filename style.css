@@ -1,16 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body {
     background-image: url("images/bg-desktop.svg");
     background-size: cover;
     background-color: hsl(257, 40%, 49%);
-    
+    max-width: 1440px;   
 }
+
+
 
 h1 {
     font-family: 'Poppins', sans-serif;
     color: white;
+    text-align: left;
 }
 
 p {
@@ -18,5 +26,50 @@ p {
     color: white;
 }
 
-.attribution { font-size: 11px; text-align: center; }
+header {
+    height: 100px;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+button {
+    margin: 30px auto 20px auto;
+    display: block;
+    width: 200px;
+    height: 38px;
+    border-radius: 50px;
+    border: none;
+    background-color: #fff;
+    color: hsl(257, 40%, 49%);
+    box-shadow:0 8px 6px -6px black;
+    font-size: 0.9rem;
+}
+
+.text_section {
+text-align: right;
+}
+
+.social-media {
+    margin-top: 70px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+}
+
+.social-icons li {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    padding: 5px;
+    position: relative;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; }
 .attribution a { color: hsl(230, 50%, 98%); }
